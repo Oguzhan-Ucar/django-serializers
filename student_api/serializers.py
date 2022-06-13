@@ -30,7 +30,7 @@ class StudentSerializer(serializers.ModelSerializer):
     days_since_joined = serializers.SerializerMethodField()
     class Meta:
         model = Student
-        fields = ['first_name', 'last_name', 'number', 'days_since_joined']
+        fields = ['first_name', 'last_name', 'number', 'days_since_joined', 'path']
         # fields = '__all__'
         # exclude  = ['id']
         
